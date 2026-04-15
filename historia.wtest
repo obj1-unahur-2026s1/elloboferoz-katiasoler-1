@@ -1,0 +1,20 @@
+import feroz.*
+import historia.*
+
+describe "Test del escenario de la historia 1"{
+    test "Salud del lobo despues de la historia1"{
+        narrador.contarHistoria()
+        assert.that(feroz.estaSaludable())
+    }
+    //da como resultado que el lobo no esta saludable,
+    // porque se le hizo sufrir una crisis al ser disparado por el cazador
+}
+describe "Test del escenario de la historia 2"{
+    test "Salud del lobo despues de la historia2"{
+        narrador.contarHistoria2()
+        assert.that(feroz.estaSaludable())
+    }
+    // da como resultado que el lobo esta saludable, porque
+    // el cazador no lo dispara, sino que se lo come, y el lobo aumenta su peso,
+    // por lo tanto esta saludable 
+}

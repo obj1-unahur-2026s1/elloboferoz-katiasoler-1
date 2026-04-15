@@ -1,7 +1,7 @@
 object caperucita {
     const canastaActual = canasta
     method peso(){
-        return 60
+        return 60 + canastaActual.peso()
     }
     method actualizarCanasta(cantidadDeManzanas){
         canastaActual.agregarManzanas(cantidadDeManzanas)

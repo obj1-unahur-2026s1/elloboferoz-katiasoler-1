@@ -10,9 +10,8 @@ object cazador {
     }
     method dispararAlPeligro(unaCosaPeligrosa){
         arma.disparar()
-        if (unaCosaPeligrosa == feroz){
-            feroz.sufrirCrisis()
-        }
+        unaCosaPeligrosa.sufrirCrisis()
+        
     }
     method salvarA(personaEnPeligro){
         self.dispararAlPeligro(feroz)
